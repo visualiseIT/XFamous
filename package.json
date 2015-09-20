@@ -1,12 +1,12 @@
 {
     "name": "xfamous",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "An Ext style Famous framework",
     "license": "GPL",
     "main": "./X/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/visualisit/xfamous"
+        "url": "https://github.com/visualiseit/xfamous"
     },
     "keywords": [
         "famous"
@@ -25,9 +25,9 @@
         "node": "*"
     },
     "bugs": {
-        "url": "https://github.com/visualisit/xfamous/issues"
+        "url": "https://github.com/visualiseit/xfamous/issues"
     },
-    "homepage": "https://github.com/visualisit/xfamous",
+    "homepage": "https://github.com/visualiseit/xfamous",
     "scripts": {
 
     }
