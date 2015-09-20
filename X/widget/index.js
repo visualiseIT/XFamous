@@ -2,5 +2,7 @@
 
 module.exports = {
     Widget: require('./Widget'),
-    Image: require('./Image')
+    Image: require('./Image'),
+    Iframe: require("./Iframe"),
+    Carousel : require("./Carousel")
 };
