@@ -1,6 +1,6 @@
 {
     "name": "xfamous",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "An Ext style Famous framework",
     "license": "GPL",
     "main": "./X/index.js",

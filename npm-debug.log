@@ -56,31 +56,31 @@
 28 silly publish   homepage: 'https://github.com/visualisit/xfamous',
 28 silly publish   scripts: {},
 28 silly publish   readme: '# XFamous\nExt style Famous framework\n',
-28 silly publish   gitHead: '3ede5de971847a484de273975efaa0b37799cc9c',
+28 silly publish   gitHead: 'e96b461115c08a5dbcde9ebe9b1ccfcd27bb463b',
 28 silly publish   _id: 'xfamous@0.0.2',
-28 silly publish   _shasum: '46c7fe8b72299ac9ccb09b20b909ad2a2dc6f199',
+28 silly publish   _shasum: '0c10bfd607d989ec0b73dd188a9edf73746b7dfd',
 28 silly publish   _from: '.' }
 29 verbose request where is /xfamous
 30 verbose request registry https://registry.npmjs.org/
-31 verbose request id 47e9fead13b55ddb
+31 verbose request id bf87542d44c1b99b
 32 verbose url raw /xfamous
 33 verbose url resolving [ 'https://registry.npmjs.org/', './xfamous' ]
 34 verbose url resolved https://registry.npmjs.org/xfamous
 35 verbose request where is https://registry.npmjs.org/xfamous
-36 info trying registry request attempt 1 at 20:41:34
+36 info trying registry request attempt 1 at 20:46:21
 37 http PUT https://registry.npmjs.org/xfamous
 38 http 403 https://registry.npmjs.org/xfamous
 39 verbose headers { 'content-type': 'application/json',
 39 verbose headers   'cache-control': 'max-age=60',
 39 verbose headers   'content-length': '95',
 39 verbose headers   'accept-ranges': 'bytes',
-39 verbose headers   date: 'Sun, 20 Sep 2015 20:41:36 GMT',
+39 verbose headers   date: 'Sun, 20 Sep 2015 20:46:23 GMT',
 39 verbose headers   via: '1.1 varnish',
 39 verbose headers   connection: 'keep-alive',
-39 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+39 verbose headers   'x-served-by': 'cache-lcy1135-LCY',
 39 verbose headers   'x-cache': 'MISS',
 39 verbose headers   'x-cache-hits': '0',
-39 verbose headers   'x-timer': 'S1442781695.032508,VS0,VE1838' }
+39 verbose headers   'x-timer': 'S1442781981.403642,VS0,VE1930' }
 40 error publish Failed PUT 403
 41 error Error: "You cannot publish over the previously published version 0.0.2." : xfamous
 41 error     at RegClient.<anonymous> (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
