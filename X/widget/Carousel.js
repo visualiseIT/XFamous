@@ -1,4 +1,5 @@
 var X = require("../X");
+var Widget = require('./Widget');
 
 var PhysicsEngine = require('famous/physics/PhysicsEngine');
 var FamousEngine = require('famous/core/FamousEngine');
@@ -14,7 +15,7 @@ var Vec3 = math.Vec3;
 
 var Carousel = X.define('Carousel', {
 
-    extend: X.widget.Widget,
+    extend: Widget,
 
     initComponent: function() {
 
@@ -107,7 +108,7 @@ var Carousel = X.define('Carousel', {
         // Notify the physics engine to track the box and the springs
         this.simulation.add(box, spring, rotationalSpring);
 
-        $$.apply(item, {
+        X.apply(item, {
             box: box,
             spring: spring,
             quaternion: quaternion,
