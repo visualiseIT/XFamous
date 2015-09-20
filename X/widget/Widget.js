@@ -33,7 +33,7 @@ var Widget = X.define('X.widget.Widget', {
 
         this.initComponent(config);
 
-        $$.apply(this, config);
+        X.apply(this, config);
 
         this._el = this.createDomElement(node);
 
@@ -231,7 +231,7 @@ var Widget = X.define('X.widget.Widget', {
         _items.forEach(function(item) {
 
             if (this.defaults) {
-                $$.applyIf(item, this.defaults);
+                X.applyIf(item, this.defaults);
             }
 
             this.items.push(this.addItem(item));
@@ -282,7 +282,7 @@ var Widget = X.define('X.widget.Widget', {
             config.position = [0, 100 * this.items.length, -10];
         }
 
-        $$.apply(config, item);
+        X.apply(config, item);
 
         var cmp;
         
