@@ -17,7 +17,7 @@
     "readmeFilename": "README.md",
     "dependencies": {
         "famous": "^0.6.1",
-        "bluebird":"^2.9"
+        "bluebird": "^2.9"
     },
     "devDependencies": {},
     "optionalDependencies": {},
@@ -27,8 +27,8 @@
     "bugs": {
         "url": "https://github.com/visualisit/xfamous/issues"
     },
-    "homepage": "https://github.com/visualisit/xfamous"
+    "homepage": "https://github.com/visualisit/xfamous",
     "scripts": {
-        
+
     }
 }
