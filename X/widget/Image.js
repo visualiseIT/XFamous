@@ -1,3 +1,5 @@
+var X = require("../X");
+
 var Widget = require('./Widget');
 var DOMElement = require('famous/dom-renderables/DOMElement');
 

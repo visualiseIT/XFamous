@@ -1,3 +1,5 @@
+var X = require("../X");
+
 var DOMElement = require('famous/dom-renderables/DOMElement');
 var Position = require('famous/components/Position');
 var Align = require('famous/components/Align');
@@ -11,8 +13,7 @@ var Spring = physics.Spring;
 var Vec3 = math.Vec3;
 
 
-
-var Widget = $$.define('X.widget.Widget', {
+var Widget = X.define('X.widget.Widget', {
 
     html: 'Hello Famous',
 
