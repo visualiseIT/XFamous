@@ -5,23 +5,100 @@
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 verbose publish [ '.' ]
-5 error Error: Invalid version: "0.0.8.1"
-5 error     at Object.module.exports.fixVersionField (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:183:13)
-5 error     at /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
-5 error     at Array.forEach (native)
-5 error     at normalize (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
-5 error     at final (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
-5 error     at then (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-5 error     at /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/read-package-json/read-json.js:331:40
-5 error     at evalmachine.<anonymous>:272:14
-5 error     at /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
-5 error     at Object.oncomplete (evalmachine.<anonymous>:108:15)
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Linux 3.14.13-c9
-8 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "publish"
-9 error cwd /home/ubuntu/workspace
-10 error node -v v0.10.35
-11 error npm -v 1.4.28
-12 verbose exit [ 1, true ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/ubuntu/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/ubuntu/.npm/xfamous/0.0.9/package.tgz', '.' ]
+11 verbose tarball /home/ubuntu/.npm/xfamous/0.0.9/package.tgz
+12 verbose folder .
+13 info prepublish xfamous@0.0.9
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/ubuntu/.npm/1f1177db-tar.lock
+16 silly lockFile 1ca35718-tu-npm-xfamous-0-0-9-package-tgz tar:///home/ubuntu/.npm/xfamous/0.0.9/package.tgz
+17 verbose lock tar:///home/ubuntu/.npm/xfamous/0.0.9/package.tgz /home/ubuntu/.npm/1ca35718-tu-npm-xfamous-0-0-9-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1ca35718-tu-npm-xfamous-0-0-9-package-tgz tar:///home/ubuntu/.npm/xfamous/0.0.9/package.tgz
+21 silly lockFile 1ca35718-tu-npm-xfamous-0-0-9-package-tgz tar:///home/ubuntu/.npm/xfamous/0.0.9/package.tgz
+22 silly lockFile e373d6ef-ubuntu-npm-xfamous-0-0-9-package /home/ubuntu/.npm/xfamous/0.0.9/package
+23 verbose lock /home/ubuntu/.npm/xfamous/0.0.9/package /home/ubuntu/.npm/e373d6ef-ubuntu-npm-xfamous-0-0-9-package.lock
+24 silly lockFile e373d6ef-ubuntu-npm-xfamous-0-0-9-package /home/ubuntu/.npm/xfamous/0.0.9/package
+25 silly lockFile e373d6ef-ubuntu-npm-xfamous-0-0-9-package /home/ubuntu/.npm/xfamous/0.0.9/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'xfamous',
+28 silly publish   version: '0.0.9',
+28 silly publish   description: 'An Ext style Famous framework',
+28 silly publish   license: 'GPL',
+28 silly publish   main: './X/index.js',
+28 silly publish   repository: { type: 'git', url: 'https://github.com/visualiseit/xfamous' },
+28 silly publish   keywords: [ 'famous' ],
+28 silly publish   author: { name: 'Sunny Jacob' },
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   dependencies: { famous: '^0.6.1', bluebird: '^2.9' },
+28 silly publish   devDependencies: {},
+28 silly publish   optionalDependencies: {},
+28 silly publish   engines: { node: '*' },
+28 silly publish   bugs: { url: 'https://github.com/visualiseit/xfamous/issues' },
+28 silly publish   homepage: 'https://github.com/visualiseit/xfamous',
+28 silly publish   scripts: {},
+28 silly publish   readme: '# XFamous\nExt style Famous framework\n',
+28 silly publish   gitHead: 'd8fa0bf9918a6e3c9b24dc8d0d72626a50db510c',
+28 silly publish   _id: 'xfamous@0.0.9',
+28 silly publish   _shasum: '54015c510149a71069c34b066031e9b9cbdc4f44',
+28 silly publish   _from: '.' }
+29 verbose request where is /xfamous
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 791e71150d084b39
+32 verbose url raw /xfamous
+33 verbose url resolving [ 'https://registry.npmjs.org/', './xfamous' ]
+34 verbose url resolved https://registry.npmjs.org/xfamous
+35 verbose request where is https://registry.npmjs.org/xfamous
+36 info trying registry request attempt 1 at 23:07:49
+37 http PUT https://registry.npmjs.org/xfamous
+38 http 403 https://registry.npmjs.org/xfamous
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sun, 20 Sep 2015 23:07:51 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-ams4121-AMS',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1442790469.762525,VS0,VE1933' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 0.0.9." : xfamous
+41 error     at RegClient.<anonymous> (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:944:16
+41 error     at process._tickCallback (node.js:442:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Linux 3.14.13-c9
+44 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "publish"
+45 error cwd /home/ubuntu/workspace
+46 error node -v v0.10.35
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
