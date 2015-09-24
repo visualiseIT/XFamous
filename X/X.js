@@ -1,3 +1,8 @@
+var Promise = require("bluebird");
+
+var FamousEngine = require('famous/core/FamousEngine');
+var Camera = require('famous/components/Camera');
+
 
 
 /***************************************************************
@@ -23,7 +28,7 @@ var X = {
 
         child.prototype = Object.create(parent.prototype);
         child.prototype.constructor = child;
-        
+
         //save ref to parent class
         child.prototype.superclass = parent.prototype;
 
@@ -32,11 +37,11 @@ var X = {
     define: function(name, config) {
 
         //debugger;
-        
+
         var Class;
 
         if (!config.hasOwnProperty('constructor')) {
-            config.constructor = function () {
+            config.constructor = function() {
                 if (this.superclass) this.superclass.constructor.apply(this, arguments);
             };
             //config.constructor.name = name; //doesn't work. todo: find work around.
@@ -44,8 +49,8 @@ var X = {
 
         Class = config.constructor;
 
-        if (!config.extend) config.extend = Object; 
-        
+        if (!config.extend) config.extend = Object;
+
         this.extend(Class, config.extend);
 
         this.apply(Class.prototype, config);
@@ -69,6 +74,18 @@ var X = {
             if (!target[key]) target[key] = source[key];
         }
 
+    },
+
+    init: function() {
+
+
+
+        FamousEngine.init();
+        this._scene = FamousEngine.createScene();
+        this._camera = new Camera(this._scene).setDepth(1000);
+
+
+
     }
 };
 
@@ -86,4 +103,3 @@ Function.prototype.subclass = function(base) {
 };
 Function.prototype.subclass.nonconstructor = function() {};
 */
-
