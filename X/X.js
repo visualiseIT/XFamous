@@ -87,13 +87,18 @@ var X = {
         //FamousEngine.getClock().setScale(0.2);
 
     },
-    
-    addWidget:function(config){
-        
-        this.apply(config, {addTo: this._scene});
-        
+
+    addWidget: function(config) {
+
+        this.applyIf(config, {
+            addTo: this._scene,
+            align: [0.5, 0.5, 0.5],
+            mount: [0.5, 0.5],
+            origin: [0.5, 0.5]
+        });
+
         return new X.widget.Widget(config);
-        
+
     }
 };
 
