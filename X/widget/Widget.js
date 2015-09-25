@@ -15,7 +15,7 @@ var Vec3 = math.Vec3;
 
 var Widget = X.define('X.widget.Widget', {
 
-    html: 'Hello Famous',
+    html: '',//'Hello Famous',
 
     isComponent: true,
 
@@ -187,7 +187,7 @@ var Widget = X.define('X.widget.Widget', {
 
         }
         else if (this.align) {
-            debugger;
+            //debugger;
             node.setPosition(this.align[0] * window.innerWidth, this.align[1] * window.innerHeight);
         }
 
