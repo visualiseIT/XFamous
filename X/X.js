@@ -84,8 +84,16 @@ var X = {
         this._scene = FamousEngine.createScene();
         this._camera = new Camera(this._scene).setDepth(1000);
 
+        //FamousEngine.getClock().setScale(0.2);
 
-
+    },
+    
+    addWidget:function(config){
+        
+        this.apply(config, {addTo: this._scene});
+        
+        return new X.widget.Widget(config);
+        
     }
 };
 

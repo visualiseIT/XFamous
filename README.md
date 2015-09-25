@@ -6,6 +6,13 @@ to use:
 
 1. clone famouse engine seed
 2. require xfamous
-3. start coding!
+3. replace src/index.js with:
 
 
+'use strict';
+
+var X = require("xfamous");
+
+X.init();
+
+X.addWidget({html:'Hello World!'});
